@@ -1,14 +1,17 @@
 # c_五子棋
-##学习了一点小东西
+##学习了一点小东西###
 * c语言里的输入缓冲区
-
-void clear_buf(void) //清楚缓冲区
+```
+void clear_buf(void) //清除缓冲区
 {
     int a;
     while ((a = getchar()) != '\n' && a != EOF);
 }
 
-可以清楚缓冲区,解决很多Bug.
+setbuf(stdout,buf); //Linux 下清除缓冲区
+fflush(stdin); //Windows 下清除缓冲区
+```
+可以清除缓冲区,解决很多Bug.
 
 * 加了悔棋代码
 

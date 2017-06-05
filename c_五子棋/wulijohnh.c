@@ -5,7 +5,7 @@
 int whoseTurn = 0, undo_player1 = 3, undo_player2 = 3;
 int chessboard[N + 1][N + 1] = {0};
 
-void printChessboard(void) //答应棋盘
+void printChessboard(void) //打印棋盘
 {
     int i, j;
     system("clear");
@@ -110,6 +110,7 @@ void playChess(void)
         chessboard[i][j] = 1;
 
         printChessboard();
+
         if (undo_player1 > 0)
         {
             printf("玩家1要悔棋吗 ? 你还有%d次机会,Y/N \n", undo_player1);
@@ -127,10 +128,6 @@ void playChess(void)
                 undo_player1--;
                 chessboard[i][j] = 0;
             }
-        }
-        else
-        {
-            printf("你没有机会了\n");
         }
     }
     else if (whoseTurn % 2 == 0)
@@ -165,10 +162,6 @@ void playChess(void)
                 chessboard[i][j] = 0;
             }
         }
-        else
-        {
-            printf("你没有机会了\n");
-        }
     }
 
     printChessboard();
@@ -186,7 +179,7 @@ void playChess(void)
             exit(0);
         }
     }
-}
+} 
 
 int main(void)
 {
@@ -197,7 +190,7 @@ int main(void)
         playChess();
         if (whoseTurn == 225)
         {
-            printf("平局");
+            printf("平局\n");
             exit(0);
         }
     }
