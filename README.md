@@ -6,6 +6,6 @@
          Windows Microsoft Visual Studio 
 使用IDE: VSCode
 ```
-## [五子棋](.\c_五子棋\README.md)
-## [2048](.\c_2048\README.md)
-## [opencv跟踪](.\cpp_opencv跟踪\README.md)
+## [五子棋](holdjohnh/Demo-Cpp-C/c_五子棋/README.md)
+## [2048](holdjohnh/Demo-Cpp-C/c_2048/README.md)
+## [opencv跟踪](holdjohnh/Demo-Cpp-C/cpp_opencv跟踪/README.md)
